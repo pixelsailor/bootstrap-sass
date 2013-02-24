@@ -9,13 +9,17 @@
 
 // Grays
 // -------------------------
-$black:                 #000 !default;
-$grayDarker:            #222 !default;
-$grayDark:              #333 !default;
-$gray:                  #555 !default;
-$grayLight:             #999 !default;
-$grayLighter:           #eee !default;
-$white:                 #fff !default;
+$blackPure:             #000 !default;
+$black:                 #111 !default;
+$grayDarkest:  			#222 !default;
+$grayDarker:            #333 !default;
+$grayDark:              #555 !default;
+$gray:                  #888 !default;
+$grayLight:             #aaa !default;
+$grayLighter:           #ccc !default;
+$grayLightest:				#eee !default;
+$white:                 #f8f8f8 !default;
+$whitePure:             #fff !default;
 
 
 // Accent colors
@@ -48,7 +52,7 @@ $sansFontFamily:        "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $serifFontFamily:       Georgia, "Times New Roman", Times, serif !default;
 $monoFontFamily:        Monaco, Menlo, Consolas, "Courier New", monospace !default;
 
-$baseFontSize:          14px !default;
+$baseFontSize:				1.4 !default;
 $baseFontFamily:        $sansFontFamily !default;
 $baseLineHeight:        20px !default;
 $altFontFamily:         $serifFontFamily !default;
