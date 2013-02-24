@@ -36,10 +36,11 @@
 
 // Center-align a block level element
 // ----------------------------------
-@mixin center-block() {
+@mixin center-block($width:auto) {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  width: $width;
 }
 
 // IE7 inline-block
@@ -125,7 +126,7 @@
   font-family: $monoFontFamily;
 }
 @mixin font-shorthand($size: $baseFontSize, $weight: normal, $lineHeight: $baseLineHeight) {
-  font-size: $size;
+  @include font-size($size);
   font-weight: $weight;
   line-height: $lineHeight;
 }
