@@ -23,7 +23,7 @@ legend {
   width: 100%;
   padding: 0;
   margin-bottom: $baseLineHeight;
-  font-size: $baseFontSize * 1.5;
+  @include font-size($baseFontSize * 1.5);
   line-height: $baseLineHeight * 2;
   color: $grayDark;
   border: 0;
@@ -31,7 +31,7 @@ legend {
 
   // Small
   small {
-    font-size: $baseLineHeight * .75;
+    @include font-size($fontSizeMini);
     color: $grayLight;
   }
 }
@@ -82,7 +82,7 @@ input[type="color"],
   height: $baseLineHeight;
   padding: 4px 6px;
   margin-bottom: $baseLineHeight / 2;;
-  font-size: $baseFontSize;
+  @include font-size($baseFontSize);
   line-height: $baseLineHeight;
   color: $gray;
   @include border-radius($inputBorderRadius);
@@ -433,7 +433,7 @@ select:focus:invalid {
   .uneditable-input,
   .dropdown-menu,
   .popover {
-    font-size: $baseFontSize;
+    @include font-size($baseFontSize);
   }
 
   input,
@@ -455,7 +455,7 @@ select:focus:invalid {
     height: $baseLineHeight;
     min-width: 16px;
     padding: 4px 5px;
-    font-size: $baseFontSize;
+    @include font-size($baseFontSize);
     font-weight: normal;
     line-height: $baseLineHeight;
     text-align: center;
